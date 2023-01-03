@@ -1,0 +1,204 @@
+/* TABLE OF CONTENTS: 
+
+1. General Setup
+2. Navbar Settings
+    2.1. Nav Avatar & Name
+    2.2. Nav Text/
+3. Footer
+4.1 Main Page - index
+4.2 Main Page - list boxes 
+
+*/
+
+/*  1. General Setup  */
+
+:root {
+  --main-color: #ff7a00;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../images/bg-image.jpg");
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.right-nav a {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-color-text {
+  color: var(--main-color);
+}
+
+/* 2. Navbar Settings */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  vertical-align: middle;
+  line-height: 0;
+}
+.navbar-bg-extension {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+/* 2.1. Nav Avatar & Name */
+
+.left-nav {
+  height: 80px;
+  padding-top: 10px;
+}
+
+.nav-avatar {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #eee6de;
+}
+
+.nav-name {
+  display: inline-block;
+  color: var(--main-color);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.last-name {
+  display: none;
+}
+
+.hamburger-menu,
+.hamburger-x {
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  .last-name {
+    display: inline-block;
+  }
+}
+
+/* 2.2. Nav Text */
+
+.right-nav {
+  text-align: right;
+}
+
+#current-page {
+  color: var(--main-color);
+  text-decoration: underline var(--main-color) 2.5px;
+  text-underline-offset: 0.75rem;
+}
+
+@media (min-width: 1600px) {
+  .right-nav a {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .right-nav a:hover {
+    text-decoration: underline var(--main-color) 2.5px;
+    text-underline-offset: 0.75rem;
+  }
+}
+
+/* 3. Footer */
+
+.footer-text {
+  padding-top: 1.5rem;
+  font-size: 1rem;
+}
+
+/* 4.1 Main Page - index */
+
+.hero-top-container {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.hero-top-container h1 {
+  font-size: 4.4rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-shadow: #666 3px 3px 5px;
+}
+
+#hello-text {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#hello-name-text {
+  text-align: right;
+  padding-right: 20px;
+}
+#work-title {
+  font-size: 2.5rem;
+  text-shadow: #666 2px 2px 4px;
+}
+
+@media (min-width: 1600px) {
+  .hero-top-container h1 {
+    display: inline;
+  }
+
+  #hello-text {
+    text-align: initial;
+  }
+
+  #hello-name-text {
+    text-align: initial;
+  }
+
+  .hero-top-container h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
+
+/* 4.2 Main Page - list boxes */
+
+.info-list-box {
+  border: #eee6de 3px solid;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 1rem;
+  padding-right: 2rem;
+  font-weight: 400;
+  max-height: 180px;
+  max-width: 458px;
+  display: grid;
+  align-content: center;
+}

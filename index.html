@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon's portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/design.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;500;700;900&family=Heebo:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- empy side containers -->
+    <div class="page-container">
+      <div class="side-space">
+        <div class="navbar-bg-extension"></div>
+      </div>
+
+      <!-- Content of the page -->
+
+      <div class="content-container">
+        <!-- Navbar start -->
+        <nav class="navbar">
+          <div class="left-nav">
+            <a href="index.html">
+              <img
+                src="/images/portrait-placeholder.jpg"
+                class="nav-avatar"
+                alt=""
+            /></a>
+          </div>
+
+          <div class="mid-nav">
+            <a href="index.html">
+              <h3 class="nav-name">
+                Simon <span class="last-name">Stenström</span>
+              </h3></a
+            >
+          </div>
+
+          <!-- Links of the menu  -->
+
+          <div class="hamburger-menu">
+            <img src="/images/hamburger.svg" alt="" />
+          </div>
+
+          <div class="hamburger-x hidden">
+            <img src="/images/hamburgerX.svg" alt="" />
+          </div>
+
+          <!-- <div class="menu right-nav"> -->
+          <div class="right-nav mobile-menu">
+            <div><a href="#" id="current-page">home</a></div>
+            <div><a href="#">portfolio</a></div>
+            <div><a href="#">about me</a></div>
+            <div><a href="#">contact</a></div>
+          </div>
+        </nav>
+
+        <!-- Main content of this page -->
+
+        <main class="hero-container">
+          <div class="hero-top-container">
+            <h1 id="hello-text">Hello there,</h1>
+            <h1 id="hello-name-text">
+              I'm <span class="main-color-text">Simon</span>.
+            </h1>
+
+            <h2 id="work-title">Web Engineer, Designer</h2>
+          </div>
+
+          <div class="hero-bottom-container">
+            <div class="info-list-box">
+              <ul>
+                <li>Looking for a trainee program to develop further</li>
+                <li>Confident in HTML, CSS & JavaScript.</li>
+                <li>Familiar with Node.JS and other shit</li>
+                <li>Studying Web Engineering online</li>
+                <li>Based in Markaryd, Sweden</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+
+        <!-- Footer section -->
+
+        <footer class="footer">
+          <div class="footer-text">&copy; Simon Stenström</div>
+        </footer>
+      </div>
+
+      <!-- empy side containers -->
+      <div class="side-space">
+        <div class="navbar-bg-extension"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
