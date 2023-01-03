@@ -31,8 +31,9 @@ h1,
 h2,
 h3,
 h4,
-.right-nav a {
+.menu a {
   font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
 }
 
 a {
@@ -92,11 +93,11 @@ a {
   padding-right: 20px;
 }
 
-.menu {
+.mobile-menu-hidden {
   display: none;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 900px) {
   .last-name {
     display: inline-block;
   }
@@ -104,8 +105,14 @@ a {
 
 /* 2.2. Nav Text */
 
-.right-nav {
-  text-align: right;
+.menu {
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.menu a:hover {
+  text-decoration: underline var(--main-color) 2.5px;
+  text-underline-offset: 0.75rem;
 }
 
 #current-page {
@@ -114,10 +121,9 @@ a {
   text-underline-offset: 0.75rem;
 }
 
-@media (min-width: 1600px) {
-  .right-nav a {
+@media (min-width: 900px) {
+  .menu a {
     font-size: 1.8rem;
-    font-weight: 700;
   }
 
   .hamburger-menu {
@@ -127,9 +133,10 @@ a {
   .menu {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    text-align: right;
   }
 
-  .right-nav a:hover {
+  .menu a:hover {
     text-decoration: underline var(--main-color) 2.5px;
     text-underline-offset: 0.75rem;
   }
@@ -170,7 +177,7 @@ a {
   text-shadow: #666 2px 2px 4px;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 900px) {
   .hero-top-container h1 {
     display: inline;
   }
