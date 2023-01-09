@@ -17,6 +17,21 @@
     />
   </head>
   <body>
+<!-- Table of content: 
+  1.Navbar start 
+1.1.Links of the menu
+
+2.Main section 
+2.1.Intro section 
+2.2.Portfolio section 
+2.3.About me
+2.4.contact
+
+3.Footer section
+
+-->
+
+
     <!-- empy side containers -->
     <div class="page-container">
       <div class="side-space">
@@ -26,7 +41,7 @@
       <!-- Content of the page -->
 
       <div class="content-container">
-        <!-- Navbar start -->
+        <!-- 1.Navbar start -->
         <nav class="navbar">
           <div class="left-nav">
             <a href="index.html">
@@ -38,14 +53,14 @@
           </div>
 
           <div class="mid-nav" >
-            <a href="index.html" >
+            <a href="#hello-section" >
               <h3 class="nav-name current-page" >
                 Simon <span class="last-name current-page">Stenström</span>
               </h3></a
             >
           </div>
 
-          <!-- Links of the menu  -->
+          <!-- 1.1.Links of the menu  -->
 
           <div class="hamburger-menu">
             <img src="/images/hamburger.svg" alt="" />
@@ -58,44 +73,150 @@
           <div class="mobile-menu-hidden menu">
            
             <div class="nav-link">
-              <a href="#">portfolio</a>
+              <a href="#portfolio-section">portfolio</a>
             </div>
-            <div class="nav-link"><a href="#">about me</a></div>
-            <div class="nav-link"><a href="#">contact</a></div>
+            <div class="nav-link"><a href="#about-section">about me</a></div>
+            <div class="nav-link"><a href="#contact-section">contact</a></div>
           </div>
         </nav>
 
-        <!-- Main content of this page -->
+       <!-- 2.Main section of the page -->
 
         <main class="hero-container">
-          <div class="hero-top-container">
+
+ <!-- 2.1.Intro section of the page -->
+
+ <div class="section-container" id="hello-section">
+          <div class="section-l-container section-l-container-grid">
             <div class="hello-container">
-              <p><h1 id="hello-text">Hello there,</h1></p>
+              <p><h1 class="section-h1">Hello there.</h1></p>
               <h1 id="hello-name-text">
-                I'm <span class="main-color-text">Simon</span>.
+                I'm <span class="main-color-text">Simon</span>,
               </h1>
 
-              <h2 id="work-title">Web Engineer & Designer</h2>
+              <h2 id="work-title">a web engineer & designer</h2>
             </div>
           </div>
 
-          <div class="hero-bottom-container">
-            <div class="info-list-box">
-              <ul>
-                <li>
-                  I'm looking for a trainee program or internship to develop
-                  further
-                </li>
-                <li>Confident in HTML, CSS & JavaScript.</li>
-                <li>Familiar with Node.JS and other shit</li>
-                <li>Studying Web Engineering online</li>
-                <li>Based in Markaryd, Sweden</li>
-              </ul>
+          <div class="section-r-container padding-15rem">
+            <div class="textbox box-r">
+             <p>I'm currently looking for a trainee program or internship to develop further alongside you</p>
+             <p>While you're feel free to check out my <a href="portfolio.html" class="main-color-text bold">portfolio</a>, you can also learn more <a href="about.html" class="main-color-text bold">about me</a>.</p>
+             <p>Lastly, I'd be happy to get in <a href="contact.html" class="main-color-text bold">contact</a> with you.</p>
+
+                  
+             
             </div>
           </div>
+</div>
+
+          <!-- 2.2.Portfolio section of the page -->
+
+<div class="section-container" id="portfolio-section">
+          <div class="section-l-container">
+            <div class="hello-container">
+              <p><h1 class="section-h1 main-color-text">portfolio</h1></p>
+            </div>
+          </div>
+
+
+          <div class="section-r-container">
+            <div class="textbox box-r">
+             <p>THIS IS PORTFOLIO OMFGZZZ!!!!</p>
+
+                  
+             
+            </div>
+          </div>
+</div>
+
+        <!-- 2.3.About me section -->
+
+<div class="section-container" id="about-section">
+
+     <div class="section-l-container">
+            <div class="hello-container">
+              <p><h1 class="section-h1 main-color-text">about me</h1></p>
+            </div>
+<div class="textbox box-l align-l">
+             <h2>My Skills:</h2>
+             <ul>
+                            <li>Frontend: HTML, CSS, JavaScript, Bootstrap</li>
+              <li>Backend: NodeJS, MongoDB, jQuery, Mongoose, Express</li>
+              <li>Design: Photoshop, Figma, Illustrator, InDesign</li>
+              <li>Languages: Swedish, English</li>
+             </ul>
+                            
+            </div>
+
+            
+          </div>
+
+
+          <div class="section-r-container">
+            <div class="textbox box-r align-l">
+             <p>I'm a junior web engineer & designer, who've been working in retail as a manager since high school. </p><p> While working in store was fun and challenging, design has always been constant hobby of mine, along with the occasional dabbling in code. Which is why I've decided to turn these interest into my new career. </p>
+                            
+            </div>
+
+             <div class="textbox box-r align-l">
+             <h2>Ongoing courses:</h2>
+             <p>The Complete JavaScript Course 2023 / Udemy.com, Jonas Schmedtmann</p>
+<p>I’m learning more in depth about javascript, looking forward to getting my certification and then start a new course about nodeJS.</p>
+                            
+            </div>
+          </div>
+
+</div>
+
+<!--  2.4.contact section -->
+
+<div class="section-container" id="contact-section">
+
+    <div class="section-l-container section-l-container-flex">
+            <div class="hello-container">
+              <p><h1 class="section-h1 main-color-text">contact</h1></p>
+            </div>
+
+            <div class="textbox box-l contact-form">
+                <p>If you would like to contact me, feel free to send a message from the form to the right, or if you'd like some other options, connect with me through email or linkedin</p>
+<div class="contact-links">
+                <p><a href="mailto:simon.stenstrom.013@gmail.com" class="main-color-text">email</a></p>
+                <p><a href="" class="main-color-text">github</a></p>
+                <p><a href="https://www.linkedin.com/in/simon-stenstr%C3%B6m-828302257/" target="_blank" class="main-color-text">linkedin</a></p>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="section-r-container padding-contact-form">
+            <div class="textbox box-r contact-form">
+             <form action="">
+                                  
+                 <label for="name">name</label>
+                 <input type="text" name="name" id="name">
+                 <label for="email">email</label>
+                 <input type="email" name="email" id="email">
+                 <label for="message">message</label>
+                 <textarea name="message" id="message" ></textarea>
+<div class="submit-btn">
+    <input type="submit" value="Send message">
+</div>
+                    
+
+             </form>
+
+                  
+             
+            </div>
+          </div>
+
+</div>
+
+
         </main>
 
-        <!-- Footer section -->
+        <!-- 3.Footer section -->
 
         <footer class="footer">
           <div class="footer-text">&copy; Simon Stenström 2023</div>
