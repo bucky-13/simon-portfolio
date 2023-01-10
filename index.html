@@ -286,14 +286,35 @@
 
           <div class="section-r-container padding-contact-form">
             <div class="textbox box-r contact-form">
-             <form action="https://formsubmit.co/87dd5e568236c727b37dceb9eb82633f" method="POST" id="send-message">
-                                  
+             <form action="https://formsubmit.co/87dd5e568236c727b37dceb9eb82633f" method="POST" name="sendMessage" id="send-message">
+              
+              <!-- Honeypot -->
+              <input class="display-none" type="text" name="_honey">
+
+              <!-- Disable captcha -->
+              <input type="hidden" name="_captcha" value="false">
+
+              <input type="hidden" name="_next" value="https://simon-stenstrom-portfolio.netlify.app/#contact-section">
+                                 
+              <div class="sent-successfully">Message sent! Thank you for writing, I'll get back to you as soon as possible</div>
+<div class="form-control">
                  <label for="name">name</label>
-                 <input type="text" name="name" id="name" required>
+                 <input type="text" name="fullname" id="fullname" >
+                 <small>Error message</small>
+</div>
+
+<div class="form-control">
                  <label for="email">email</label>
-                 <input type="email" name="email" id="email" required>
+                 <input type="email" name="email" id="email" >
+                 <small>Error message</small>
+</div>
+
+                 <div class="form-control">
                  <label for="message">message</label>
-                 <textarea name="message" id="message" required></textarea>
+                 <textarea name="message" id="message" ></textarea>
+                <small>Error message</small>
+</div>
+
 <div class="submit-btn">
   <button type="submit" value="Send message" form="send-message">Send message <img src="/images/icons/send.svg" alt=""></button>
    

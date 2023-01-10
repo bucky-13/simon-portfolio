@@ -375,6 +375,41 @@ textarea:focus {
   padding-left: 0.8rem;
 }
 
+.display-none,
+.sent-successfully {
+  display: none;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.success input,
+.form-control.success textarea {
+  border-bottom: 2px solid #2ecc71;
+  border-left: 2px solid #2ecc71;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+  border-bottom: 2px solid #e74c3c;
+  border-left: 2px solid #e74c3c;
+}
+
 /* 5.1 contact text box */
 
 .contact-links {
