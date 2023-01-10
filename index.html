@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/design.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    
+       <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="/css/img-carousel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,11 +69,11 @@
           <!-- 1.1.Links of the menu  -->
 
           <div class="hamburger-menu">
-            <img src="/images/hamburger.svg" alt="" />
+            <img src="/images/icons/hamburger.svg" alt="" />
           </div>
 
           <div class="hamburger-x hidden">
-            <img src="/images/hamburgerX.svg" alt="" />
+            <img src="/images/icons/hamburgerX.svg" alt="" />
           </div>
 
           <div class="mobile-menu-hidden menu">
@@ -112,22 +118,111 @@
 
           <!-- 2.2.Portfolio section of the page -->
 
-<div class="section-container" id="portfolio-section">
+<div class="portfolio-container" id="portfolio-section">
           <div class="section-l-container">
             <div class="hello-container">
               <p><h1 class="section-h1 main-color-text">portfolio</h1></p>
             </div>
+
+
+            
           </div>
 
 
-          <div class="section-r-container">
-            <div class="textbox box-r">
-             <p>THIS IS PORTFOLIO OMFGZZZ!!!!</p>
+          <div class="portfolio-section-container">
 
-                  
-             
+            <div class="portfolio-textbox box-l-portfolio align-l">
+            <h2>YelpCamp</h2>
+            <p>Website created during the Udemy course The Web Developer Bootcamp 2022. It’s for viewing campsites in the US that users can add view and review. </p>
+            <p></p>
+
+            <div class="portfolio-btn-git-flex">
+
+              <a href="https://yelpcamp-simon.onrender.com/" target="_blank">
+              <div class="view-btn">
+                <p>View Site</p>  <img src="/images/icons/link-external-light.svg" alt="">
+
+              </div>
+             </a>
+          <a href="https://github.com/" target="_blank">
+              <div class="git-btn"> <img src="images/icons/github-icon-light.svg"alt=""> 
+              <p>git repository</p> </div>
+             </a>
+
+              </div>
+
+              <div class="language-btns">
+                <p class="program-lang-btn">HTML</p>
+                <p class="program-lang-btn">CSS</p>
+                <p class="program-lang-btn">JavaScript</p>
+                <p class="program-lang-btn">react</p>
+                <p class="program-lang-btn">NodeJS</p>
+                <p class="program-lang-btn">MongoDB</p>
+              </div>
+         
+            
             </div>
+
+            <div class="portfolio-img-container" id="snapshots">
+              <div class="scaling-gallery">
+               <div class="main-gallery" data-flickity='{ "autoPlay": true, "setGallerySize": false, "wrapAround": true, "freeScroll": false}'>
+                  <div class="gallery-cell"><img src="/images/portfolio/yelpcamp-desktop1.png" alt=""></div>
+                  <div class="gallery-cell"><img src="/images/portfolio/yelpcamp-desktop2.png" alt=""></div>
+                  <div class="gallery-cell"><img src="/images/portfolio/yelpcamp-phone1.png"  alt=""></div>
+                  <div class="gallery-cell"><img src="/images/portfolio/yelpcamp-phone2.png"alt=""></div>
+
+              </div>
+            </div>
+           </div>
+
+                   </div>
+
+<div class="portfolio-section-container">
+
+            <div class="portfolio-textbox box-l-portfolio align-l">
+              <h2>Portfolio site for Jane Doe</h2>
+              <p>Portfolio site created for a friend who's a developer. Site is private currently so this example contains placeholder text</p>
+              <p></p>
+
+              <div class="portfolio-btn-git-flex">
+
+              <a href="https://ramona-portfolio.netlify.app/" target="_blank">
+              <div class="view-btn">
+                <p>View Site</p>  <img src="/images/icons/link-external-light.svg" alt="">
+
+              </div>
+             </a>
+              <a href="https://github.com/" target="_blank">
+              <div class="git-btn"> <img src="images/icons/github-icon-light.svg"alt=""> 
+              <p>git repository</p> </div>
+             </a>
+                 </div>
+
+                 <div class="language-btns">
+                <p class="program-lang-btn">HTML</p>
+                <p class="program-lang-btn">CSS</p>
+                <p class="program-lang-btn">JavaScript</p>
+              </div>
+
+
+
+</div>
+
+            <div class="portfolio-img-container" id="snapshots">
+              <div class="scaling-gallery">
+               <div class="main-gallery" data-flickity='{ "autoPlay": true, "setGallerySize": false, "wrapAround": true, "freeScroll": false}'>
+                  <div class="gallery-cell"><img src="/images/portfolio/portfolio-desktop1.png" alt=""></div>
+                  <div class="gallery-cell"><img src="/images/portfolio/portfolio-desktop2.png" alt=""></div>
+                  <div class="gallery-cell"><img src="/images/portfolio/portfolio-phone1.png"  alt=""></div>
+                  <div class="gallery-cell"><img src="/images/portfolio/portfolio-phone2.png"alt=""></div>
+
+              </div>
+            </div>
+           </div>
+
+
           </div>
+
 </div>
 
         <!-- 2.3.About me section -->
@@ -181,9 +276,9 @@
             <div class="textbox box-l contact-form">
                 <p>If you would like to contact me, feel free to send a message from the form to the right, or if you'd like some other options, connect with me through email or linkedin</p>
 <div class="contact-links">
-                <p><a href="mailto:simon.stenstrom.013@gmail.com" class="main-color-text">email</a></p>
-                <p><a href="" class="main-color-text">github</a></p>
-                <p><a href="https://www.linkedin.com/in/simon-stenstr%C3%B6m-828302257/" target="_blank" class="main-color-text">linkedin</a></p>
+                <p><img src="/images/icons/email.svg" alt=""> <a href="mailto:simon.stenstrom.013@gmail.com" class="main-color-text">email</a></p>
+                <p><img src="/images/icons/github-icon.svg" alt=""> <a href="" class="main-color-text">github</a></p>
+                <p><img src="/images/icons/linkedin.svg" alt=""> <a href="https://www.linkedin.com/in/simon-stenstr%C3%B6m-828302257/" target="_blank" class="main-color-text">linkedin</a></p>
             </div>
             </div>
           </div>
@@ -191,16 +286,17 @@
 
           <div class="section-r-container padding-contact-form">
             <div class="textbox box-r contact-form">
-             <form action="">
+             <form action="https://formsubmit.co/simon.stenstrom.013@gmail.com" method="POST" id="send-message">
                                   
                  <label for="name">name</label>
-                 <input type="text" name="name" id="name">
+                 <input type="text" name="name" id="name" required>
                  <label for="email">email</label>
-                 <input type="email" name="email" id="email">
+                 <input type="email" name="email" id="email" required>
                  <label for="message">message</label>
-                 <textarea name="message" id="message" ></textarea>
+                 <textarea name="message" id="message" required></textarea>
 <div class="submit-btn">
-    <input type="submit" value="Send message">
+  <button type="submit" value="Send message" form="send-message">Send message <img src="/images/icons/send.svg" alt=""></button>
+   
 </div>
                     
 
@@ -229,6 +325,10 @@
       </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/js/carousel.js"></script>
+
   </body>
 </html>

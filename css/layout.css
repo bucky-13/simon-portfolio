@@ -64,6 +64,44 @@ body {
   min-height: 100vh;
 }
 
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
+.portfolio-section-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 100px;
+}
+
+.portfolio-btn-git-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -20px;
+}
+
+.git-btn,
+.view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.language-btns {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -16px;
+}
+
 .section-l-container-flex {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +129,12 @@ body {
     grid-template-columns: auto 90% auto;
   }
 
+  .portfolio-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .hero-container {
     display: flex;
     flex-direction: column;
@@ -114,6 +158,20 @@ body {
     padding-top: 15em;
   }
 
+  .portfolio-section-container {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    gap: 5%;
+    margin-bottom: 100px;
+  }
+
+  .portfolio-btn-git-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -60px;
+  }
+
   .padding-contact-form {
     padding-top: 10rem;
   }
@@ -122,6 +180,12 @@ body {
     width: 100%;
     left: auto;
     max-width: 1260px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .portfolio-btn-git-flex {
+    margin-top: 0px;
   }
 }
 
