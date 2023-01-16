@@ -59,9 +59,14 @@ body {
   grid-template-rows: auto auto;
   justify-content: center;
   align-content: flex-start;
-  padding-bottom: 3rem;
+  padding-bottom: 80vh;
   /* border: 1px solid yellowgreen; */
   min-height: 100vh;
+}
+
+#contactsection {
+  padding-bottom: 0;
+  min-height: calc(100vh - 130px);
 }
 
 .portfolio-container {
@@ -69,6 +74,7 @@ body {
   flex-direction: column;
   grid-template-rows: auto auto;
   justify-content: center;
+  padding-bottom: 80vh;
 }
 
 .portfolio-section-container {
@@ -140,9 +146,10 @@ body {
     flex-direction: column;
   }
 
-  .section-container {
+  .section-container,
+  .portfolio-h1-container {
     display: grid;
-    grid-template-columns: 47.5% 47.5%;
+    grid-template-columns: repeat(2, 47.5%);
     gap: 5%;
 
     /* justify-content: center;

@@ -9,6 +9,8 @@
 4.2 Main Page - list boxes 
 5. contact form
 5.1 contact text box
+6. Portfolio section
+7. About section 
 
 */
 
@@ -67,12 +69,15 @@ a {
 .align-l {
   text-align: left;
 }
+.align-c {
+  text-align: center;
+}
 
 .inline {
   display: inline-block;
 }
 
-#hello-section {
+/* #hello-section {
   scroll-margin-top: 50px;
 }
 
@@ -80,15 +85,23 @@ a {
 #about-section,
 #contact-section {
   scroll-margin-top: 370px;
+} */
+
+.anchor-link {
+  scroll-margin-top: 390px;
 }
 
 @media (min-width: 900px) {
-  #hello-section,
+  .anchor-link {
+    scroll-margin-top: 100px;
+  }
+
+  /* #hello-section,
   #portfolio-section,
   #about-section,
   #contact-section {
-    scroll-margin-top: 50px;
-  }
+    scroll-margin-top: 100px;
+  } */
 }
 
 /* 2. Navbar Settings */
@@ -170,7 +183,8 @@ a {
   text-underline-offset: 0.75rem;
 }
 
-.current-page {
+/* active link */
+.active-link {
   color: var(--main-color);
   text-decoration: underline var(--main-color) 2.5px;
   text-underline-offset: 0.75rem;
@@ -215,22 +229,22 @@ a {
 
 .section-l-container {
   padding-top: 2rem;
-  text-align: center;
-  /* border: 1px solid green; */
-  /* max-width: 700px; */
 }
 
-.section-l-container h1 {
+.section-container h1,
+.hello-container h1 {
   font-size: 4.4em;
   line-height: 2rem;
   font-weight: 700;
-  text-shadow: #666 3px 3px 5px;
+  text-shadow: var(--light-border-color) 0 0 8px;
+}
+
+#hello-intro-h1 {
+  text-align: left;
 }
 
 .section-r-container {
   padding-top: 2rem;
-  text-align: center;
-  /* border: 1px solid red; */
 }
 
 .hello-container {
@@ -238,16 +252,25 @@ a {
 }
 
 .section-h1 {
-  text-align: left;
+  text-align: center;
 }
 
 #hello-name-text {
   text-align: right;
   padding-right: 20px;
 }
-#work-title {
+.work-title {
   font-size: 2em;
-  text-shadow: #666 2px 2px 4px;
+  text-shadow: var(--light-border-color) 0 0 8px;
+}
+
+.hello-aligment {
+  margin-top: 10rem;
+}
+
+.checkout-alignment {
+  margin-top: -5rem;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -267,6 +290,16 @@ a {
   #work-title {
     font-size: 2.3em;
   }
+
+  .checkout-alignment {
+    margin-top: -15rem;
+    text-align: center;
+  }
+
+  .checkout-alignment {
+    margin-top: -15rem;
+    text-align: center;
+  }
 }
 
 /* 4.2 Main Page - list boxes */
@@ -277,32 +310,21 @@ a {
   padding: 4rem;
   font-weight: 400;
   display: grid;
-  align-content: center;
+  text-align: left;
 }
 
-.box-r {
-  border-bottom-left-radius: 4.5em;
-  border-top-right-radius: 4.5em;
-  border-bottom-right-radius: 4.5em;
-  margin-bottom: 3rem;
-}
+.box-r,
 .box-l {
-  border-bottom-left-radius: 4.5em;
-  border-top-left-radius: 4.5em;
-  border-bottom-right-radius: 4.5em;
+  border-radius: 4.5rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 900px) {
   .box-r {
-    border-bottom-left-radius: 9em;
-    border-top-right-radius: 9em;
-    border-bottom-right-radius: 9em;
-    margin-bottom: 3rem;
+    border-radius: 0 9rem 9rem 9rem;
   }
   .box-l {
-    border-bottom-left-radius: 9em;
-    border-top-left-radius: 9em;
-    border-bottom-right-radius: 9em;
+    border-radius: 9rem 0 9rem 9rem;
   }
 }
 
@@ -416,7 +438,7 @@ textarea:focus {
   font-size: 1.2em;
 }
 
-/* 6. portfolio section */
+/* 6. Portfolio section */
 
 .portfolio-img {
   max-width: 100%;
@@ -519,4 +541,90 @@ textarea:focus {
 }
 
 @media (min-width: 1150px) {
+}
+
+/* 7. About section */
+
+.about-image {
+  max-width: 350px;
+  border-radius: 4.5rem 4.5rem 0 0;
+  /* border: 1px solid var(--light-border-color); */
+}
+
+.about-h1 {
+  order: -1;
+}
+
+.about-photo-container {
+  text-align: center;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+  height: 437px;
+  order: -1;
+}
+
+.about-skills-container {
+  margin-top: 0rem;
+}
+
+.box-about-me {
+  border-radius: 2.5rem 2.5rem 4.5rem 4.5rem;
+  margin-bottom: 3rem;
+}
+/* .box-about-me {
+  border-radius: 0 0 4.5rem 4.5rem;
+  margin-bottom: 3rem;
+} */
+
+@media (min-width: 500px) {
+  .box-about-me {
+    border-radius: 3rem 3rem 4.5rem 4.5rem;
+  }
+}
+@media (min-width: 515px) {
+  .box-about-me {
+    border-radius: 3.5rem 3.5rem 4.5rem 4.5rem;
+  }
+}
+@media (min-width: 530px) {
+  .box-about-me {
+    border-radius: 4rem 4rem 4.5rem 4.5rem;
+  }
+}
+@media (min-width: 550px) {
+  .box-about-me {
+    border-radius: 4.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-image {
+    max-width: 350px;
+    border-radius: 9rem;
+    border: 1px solid var(--light-border-color);
+  }
+
+  .box-about-me {
+    border-radius: 9rem 9rem 9rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .about-intro-container {
+    margin-top: 7rem;
+  }
+
+  .about-photo-container {
+    margin-top: -26rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    order: 0;
+  }
+
+  .about-skills-container {
+    margin-top: -2rem;
+  }
+
+  .about-courses-container {
+    margin-top: -20rem;
+  }
 }

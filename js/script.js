@@ -74,7 +74,7 @@ function checkInputs() {
   if (emailValue === "") {
     setErrorInput(email, "You need to enter a valid e-mail address.");
   } else {
-    setSuccessInput(email);
+    validateEmail(emailValue) && setSuccessInput(email);
     e = true;
   }
 

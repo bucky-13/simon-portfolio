@@ -58,11 +58,11 @@
             /></a>
           </div>
 
-          <div class="mid-nav" >
-            <a href="#hello-section" >
-              <h3 class="nav-name current-page" >
-                Simon <span class="last-name current-page">Stenström</span>
-              </h3></a
+          <div class="navlink-container">
+            <a href="#hellosection" class="anchor-link">
+              <p class="active-link" >
+                Simon <span class="last-name">Stenström</span>
+              </p></a
             >
           </div>
 
@@ -78,11 +78,11 @@
 
           <div class="mobile-menu-hidden menu">
            
-            <div class="nav-link">
-              <a href="#portfolio-section">portfolio</a>
+            <div class="navlink-container">
+              <a href="#portfoliosection" class="anchor-link"><p>portfolio</p></a>
             </div>
-            <div class="nav-link"><a href="#about-section">about me</a></div>
-            <div class="nav-link"><a href="#contact-section">contact</a></div>
+            <div class="navlink-container" ><a href="#aboutsection" class="anchor-link "><p>about me</p></a></div>
+            <div class="navlink-container" ><a href="#contactsection" class="anchor-link"><p>contact</p></a></div>
           </div>
         </nav>
 
@@ -92,37 +92,43 @@
 
  <!-- 2.1.Intro section of the page -->
 
- <div class="section-container" id="hello-section">
+ <section class="section-container anchor-link" id="hellosection">
           <div class="section-l-container section-l-container-grid">
-            <div class="hello-container">
-              <p><h1 class="section-h1">Hello there.</h1></p>
+            <div class="hello-container" >
+              <p><h1 class="section-h1" id="hello-intro-h1">Hello there.</h1></p>
               <h1 id="hello-name-text">
                 I'm <span class="main-color-text">Simon</span>,
               </h1>
 
-              <h2 id="work-title">a web engineer & designer</h2>
+              <h2 class="work-title">a web developer & designer</h2>
             </div>
           </div>
 
-          <div class="section-r-container padding-15rem">
+          <div class="hello-aligment">
             <div class="textbox box-r">
-             <p>I'm currently looking for a trainee program or internship to develop further alongside you</p>
-             <p>While you're feel free to check out my <a href="portfolio.html" class="main-color-text bold">portfolio</a>, you can also learn more <a href="about.html" class="main-color-text bold">about me</a>.</p>
-             <p>Lastly, I'd be happy to get in <a href="contact.html" class="main-color-text bold">contact</a> with you.</p>
-
-                  
-             
-            </div>
+             <p>I'm a junior web developer with a background in graphic and UI/UX design.</p>
+             <p>My goal is to become a skilled and versatile developer for a company.</p>
+             <p>I'm currently looking for a trainee or internship program where I can develop further alongside You.</p>      
+             </div>
           </div>
-</div>
+
+          <div class="section-r-container checkout-alignment">
+
+           <a href="#portfoliosection" class="anchor-link"> <h2 class="work-title">View my <span class="main-color-text">portfolio</span> </h2>
+          <img src="/images/icons/down-arrow.svg" alt=""></a>
+          </div>
+
+          
+</section>
 
           <!-- 2.2.Portfolio section of the page -->
 
-<div class="portfolio-container" id="portfolio-section">
-          <div class="section-l-container">
+<section class="portfolio-container anchor-link" id="portfoliosection">
+          <div class="portfolio-h1-container">
             <div class="hello-container">
-              <p><h1 class="section-h1 main-color-text">portfolio</h1></p>
+              <h1 class="section-h1 main-color-text">portfolio</h1>
             </div>
+            <div></div>
 
 
             
@@ -133,7 +139,7 @@
 
             <div class="portfolio-textbox box-l-portfolio align-l">
             <h2>YelpCamp</h2>
-            <p>Website created during the Udemy course The Web Developer Bootcamp 2022. It’s for viewing campsites in the US that users can add view and review. </p>
+            <p>Website created during the Udemy course The Web Developer Bootcamp 2022. It displays randomly generated campsites in the US. Includes geocoding, account creation, commenting plus add, edit and delete for your own campsites. </p>
             <p></p>
 
             <div class="portfolio-btn-git-flex">
@@ -180,8 +186,8 @@
 <div class="portfolio-section-container">
 
             <div class="portfolio-textbox box-l-portfolio align-l">
-              <h2>Portfolio site for Jane Doe</h2>
-              <p>Portfolio site created for a friend who's a developer. Site is private currently so this example contains placeholder text</p>
+              <h2>Portfolio site for John Doe</h2>
+              <p>My first portfolio site, contains about and portfolio sections.</p>
               <p></p>
 
               <div class="portfolio-btn-git-flex">
@@ -223,50 +229,61 @@
 
           </div>
 
-</div>
+</section>
 
         <!-- 2.3.About me section -->
 
-<div class="section-container" id="about-section">
+<section class="section-container anchor-link" id="aboutsection">
 
-     <div class="section-l-container">
-            <div class="hello-container">
-              <p><h1 class="section-h1 main-color-text">about me</h1></p>
+     
+            <div class="hello-container about-h1">
+              <h1 class="section-h1 main-color-text">about me</h1>
             </div>
-<div class="textbox box-l align-l">
+
+            <div class="about-intro-container">
+  <div class="textbox box-about-me align-l">
+             <p>I'm a junior web developer & UI/UX designer, who worked in retail as a sales manager after graduating high school. </p>
+             <p> While working in stores was fun and challenging, I've always had a big interest in code and design which is why I've decided to turn these interest into a new career. </p>
+                    </div>        
+            </div>
+
+         
+
+            <div class="about-photo-container">
+          
+            <img src="/images/simon-photo.png" class="about-image" alt="">
+        
+      </div>
+
+         <div class="about-skills-container">
+            <div class="textbox box-r">
              <h2>My Skills:</h2>
              <ul>
-                            <li>Frontend: HTML, CSS, JavaScript, Bootstrap</li>
-              <li>Backend: NodeJS, MongoDB, jQuery, Mongoose, Express</li>
-              <li>Design: Photoshop, Figma, Illustrator, InDesign</li>
-              <li>Languages: Swedish, English</li>
+              <li><span class="bold">Frontend:</span> HTML, CSS, JavaScript, Bootstrap</li>
+              <li><span class="bold">Backend:</span> NodeJS, MongoDB, jQuery, Mongoose, Express</li>
+              <li><span class="bold">Design:</span> Photoshop, Figma, Illustrator, InDesign</li>
+              <li><span class="bold">Languages:</span> Swedish, English</li>
              </ul>
-                            
+            </div>      
             </div>
+    
+          
 
-            
-          </div>
-
-
-          <div class="section-r-container">
-            <div class="textbox box-r align-l">
-             <p>I'm a junior web engineer & designer, who've been working in retail as a manager since high school. </p><p> While working in store was fun and challenging, design has always been constant hobby of mine, along with the occasional dabbling in code. Which is why I've decided to turn these interest into my new career. </p>
-                            
-            </div>
-
-             <div class="textbox box-r align-l">
+            <div class="about-courses-container">
+             <div class="textbox box-l ">
              <h2>Ongoing courses:</h2>
-             <p>The Complete JavaScript Course 2023 / Udemy.com, Jonas Schmedtmann</p>
-<p>I’m learning more in depth about javascript, looking forward to getting my certification and then start a new course about nodeJS.</p>
-                            
+             <p><span class="bold">Modern React with Redux 2023 update</span> / Udemy.com, 
+by Stephen Grider</p>
+<p>Just started this course to learn about React to improve my skills further.</p>
+                         </div>   
             </div>
-          </div>
+         
 
-</div>
+</section>
 
 <!--  2.4.contact section -->
 
-<div class="section-container" id="contact-section">
+<section class="section-container anchor-link" id="contactsection">
 
     <div class="section-l-container section-l-container-flex">
             <div class="hello-container">
@@ -274,10 +291,10 @@
             </div>
 
             <div class="textbox box-l contact-form">
-                <p>If you would like to contact me, feel free to send a message from the form to the right, or if you'd like some other options, connect with me through email or linkedin</p>
+                <p>If you have any questions or would like to contact me, you can send a message. You can also contact me through e-mail or Linkedin</p>
 <div class="contact-links">
                 <p><img src="/images/icons/email.svg" alt=""> <a href="mailto:simon.stenstrom.013@gmail.com" class="main-color-text">email</a></p>
-                <p><img src="/images/icons/github-icon.svg" alt=""> <a href="" class="main-color-text">github</a></p>
+                <p><img src="/images/icons/github-icon.svg" alt=""> <a href="https://github.com/bucky-13" target="_blank" class="main-color-text">github</a></p>
                 <p><img src="/images/icons/linkedin.svg" alt=""> <a href="https://www.linkedin.com/in/simon-stenstr%C3%B6m-828302257/" target="_blank" class="main-color-text">linkedin</a></p>
             </div>
             </div>
@@ -328,7 +345,7 @@
             </div>
           </div>
 
-</div>
+</section>
 
 
         </main>
