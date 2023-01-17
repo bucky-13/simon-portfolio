@@ -22,7 +22,7 @@ body {
 
 .navbar {
   display: grid;
-  grid-template-columns: 100px 20% auto;
+  grid-template-columns: 1px 20% auto;
   align-items: center;
   border-bottom: 3px solid black;
   position: sticky;
@@ -129,7 +129,7 @@ body {
 @media (min-width: 900px) {
   .navbar {
     display: grid;
-    grid-template-columns: 100px 35% auto;
+    grid-template-columns: 10px 35% auto;
   }
   .page-container {
     grid-template-columns: auto 90% auto;
