@@ -197,10 +197,10 @@ a {
 }
 
 /* active link */
-.active-link {
+.active {
   color: var(--main-color);
-  text-decoration: underline var(--main-color) 2.5px;
-  text-underline-offset: 0.75rem;
+  /* text-decoration: underline var(--main-color) 2.5px;
+  text-underline-offset: 0.75rem; */
 }
 
 @media (min-width: 900px) {
