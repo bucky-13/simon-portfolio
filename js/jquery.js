@@ -5,8 +5,6 @@ const addClassOnScroll = function () {
   $("section[id]").each(function (index, elem) {
     let offsetTop = $(elem).offset().top;
     let outerHeight = $(this).outerHeight(true);
-    // console.log(offsetTop);
-    console.log(outerHeight);
 
     if (windowTop > offsetTop - 500 && windowTop < offsetTop + outerHeight) {
       let elemId = $(elem).attr("id");

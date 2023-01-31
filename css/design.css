@@ -87,16 +87,6 @@ a {
   display: inline-block;
 }
 
-/* #hello-section {
-  scroll-margin-top: 50px;
-}
-
-#portfolio-section,
-#about-section,
-#contact-section {
-  scroll-margin-top: 370px;
-} */
-
 .anchor-link {
   scroll-margin-top: 390px;
 }
@@ -105,26 +95,17 @@ a {
   .anchor-link {
     scroll-margin-top: 100px;
   }
-
-  /* #hello-section,
-  #portfolio-section,
-  #about-section,
-  #contact-section {
-    scroll-margin-top: 100px;
-  } */
 }
 
 /* 2. Navbar Settings */
 
 .navbar {
-  /* background-color: rgba(255, 255, 255, 0.8); */
   background-color: #fafbfb;
   vertical-align: middle;
   line-height: 0;
   z-index: 100;
 }
 .navbar-bg-extension {
-  /* background-color: #fafbfb; */
   background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1),
@@ -199,8 +180,6 @@ a {
 /* active link */
 .active {
   color: var(--main-color);
-  /* text-decoration: underline var(--main-color) 2.5px;
-  text-underline-offset: 0.75rem; */
 }
 
 @media (min-width: 900px) {
@@ -332,6 +311,16 @@ a {
   }
 }
 
+#down-arrow-link img:nth-child(3) {
+  display: none;
+}
+#down-arrow-link:hover img:nth-child(3) {
+  display: inline-block;
+}
+#down-arrow-link:hover img:nth-child(2) {
+  display: none;
+}
+
 /* 4.2 Main Page - list boxes */
 
 .textbox {
@@ -381,16 +370,14 @@ textarea {
 input[type="text"],
 input[type="email"],
 textarea {
-  /* margin-top: -0.7rem; */
   width: 90%;
   resize: none;
   padding: 0.7rem;
   border-radius: 1rem;
   background-color: #fafbfb;
-  /* border: 1px solid var(--light-border-color); */
   border: none;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
   margin: 0.5rem 0rem 1rem 0;
   outline: none;
 }
@@ -398,7 +385,6 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  /* border: 1px solid var(--main-color); */
   border-bottom: 2px solid var(--main-color);
   border-left: 2px solid var(--main-color);
   outline: none;
@@ -431,7 +417,6 @@ textarea:focus {
 }
 
 .contact-form label {
-  /* color: var(--main-color); */
   font-weight: 700;
   padding-left: 0.8rem;
 }
@@ -475,6 +460,26 @@ textarea:focus {
 
 .contact-links {
   font-size: 1.2em;
+}
+
+.contact-link-img-container:nth-of-type(1) img {
+  margin-bottom: -2px;
+}
+.contact-link-img-container:nth-of-type(2) img {
+  margin-bottom: -4px;
+}
+.contact-link-img-container:nth-of-type(3) img {
+  margin-bottom: -1px;
+}
+
+.contact-link-img-container {
+  width: 35px;
+  display: inline-block;
+}
+
+.contact-links a:hover {
+  text-decoration: underline var(--main-color) 2px;
+  text-underline-offset: 0.3rem;
 }
 
 /* 6. Portfolio section */
@@ -587,7 +592,6 @@ textarea:focus {
 .about-image {
   max-width: 300px;
   border-radius: 4.5rem 4.5rem 0 0;
-  /* border: 1px solid var(--light-border-color); */
 }
 
 .about-h1 {
